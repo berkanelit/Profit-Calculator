@@ -42,7 +42,7 @@ Trading botu geliştirme hakkında daha detaylı bilgi için:
 
 İletişim
 Daha fazla bilgi ve güncellemeler için:
-Metaprora.com
+[Metaprora.com](https://metaprora.com/)
 
 Lisans
 Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için LICENSE dosyasına bakın.
