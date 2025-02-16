@@ -1,26 +1,51 @@
-# Profit-Calculator
+Binance Trading Bot
+Bu proje, Binance kripto para borsasında otomatik alım-satım işlemleri gerçekleştiren bir trading botudur. DEMA (Double Exponential Moving Average) indikatörünü kullanarak alım-satım sinyalleri üretir ve Telegram üzerinden bildirimler gönderir.
 
-Bu program borsa gibi bazı yatırım platformlarında günlük, aylık ve yıllık kar oranlarını hesaplama yarar.
+Özellikler
+DEMA indikatörü ile teknik analiz
+Otomatik alım-satım işlemleri
+Telegram bildirimleri
+Risk yönetimi (stop-loss ve take-profit)
+JSON dosyasında işlem verilerinin saklanması
+Ping kontrolü ve sistem performans izleme
+Gereksinimler
+Python 3.7+
+pandas
+pandas_ta
+python-binance
+pyTelegramBotAPI
+Kurulum
+Gerekli kütüphaneleri yükleyin:
+BASH
 
-İnternette buna benzer heplama sistemleri olmadığı için yapma gereği duyulmuştur. 
+pip install pandas pandas_ta python-binance pyTelegramBotAPI
+Binance API anahtarlarınızı ve Telegram bot token'ınızı kod içerisinde ilgili yerlere ekleyin:
+Python
 
-Sürekli değiştirilebir veya güncellenenmesi için for döngüsü kullanılmıştır.
+api_key = 'YOUR_API_KEY'
+secret_key = 'YOUR_SECRET_KEY'
+bot_token = "YOUR_BOT_TOKEN"
+chat_id = YOUR_CHAT_ID
+Kullanım
+Botu çalıştırmak için:
 
-Özellikle kardıraçlı sistemler için çok güzel bir hesaplama aracıdır.
+BASH
 
+python bot.py
+Önemli Notlar
+Bot çalıştırılmadan önce Binance hesabınızda yeterli USDT bakiyesi olduğundan emin olun
+Risk yönetimi parametrelerini (stop-loss, take-profit) kendi risk toleransınıza göre ayarlayın
+Test ortamında deneyip, gerçek işlemlere geçmeden önce botun davranışını gözlemleyin
+Detaylı Rehber
+Trading botu geliştirme hakkında daha detaylı bilgi için:
+[Python ile Trading Botu Geliştirme - Kapsamlı Rehber](https://metaprora.com/python-ile-trading-botu-gelistirme-kapsamli-rehber/)
 
-This program is useful for calculating daily, monthly and annual profit rates in some investment platforms such as the stock market.
+İletişim
+Daha fazla bilgi ve güncellemeler için:
+Metaprora.com
 
-Since there are no such fastening systems on the Internet, it was necessary to do so.
+Lisans
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için LICENSE dosyasına bakın.
 
-A for loop is used to constantly change or update.
-
-It is a very nice calculation tool, especially for systems with slabs.
-
-*************Translate************
-   Ayı Giriniz = Enter Month
-   Paranızı Giriniz = Enter Your Money
-   Karı Giriniz = Enter Profit Percentage
-   Yıl Sonu Kar Marjınız = Your Year-End Profit Margin
-
- 
+Sorumluluk Reddi
+Bu bot eğitim amaçlıdır ve finansal tavsiye niteliği taşımaz. Kripto para piyasalarında trading yapmak yüksek risk içerir. Tüm trading kararlarınızdan kendiniz sorumlusunuz.
